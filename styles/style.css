@@ -144,7 +144,7 @@ nav ul li a, .footer-divisiones ul li a {
     font-weight: 700;
 }
 
-footer #logo {
+.footer #logo {
     position: relative;
     top: 30px;
 }
@@ -509,3 +509,59 @@ footer .h5 {
 }
 
 
+/* about-us.html */ 
+
+.aboutus {
+    background-color: #16162F;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.aboutus main {
+    color: white;
+}
+
+@media all and (max-width: 767px) {
+
+footer {
+    padding-top: 50px;
+}
+
+footer {
+    background-image: none;
+}
+
+
+.footer #logo {
+    position: relative;
+    
+}
+
+.footer-info {
+    position: relative;
+    max-width: 500px;
+    top: 30px;
+    left: 10%;
+}
+
+.footer-divisiones {
+    display: inline-block;
+    margin: 0 5%;
+    vertical-align: top;
+}
+
+.footer-divisiones ul {
+    list-style-type: none;
+}
+}
+
+footer .h5 {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+}
