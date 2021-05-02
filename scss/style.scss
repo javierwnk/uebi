@@ -1,0 +1,26 @@
+$page: home;
+
+// Imports de base
+
+@import './base/reset';
+
+// Imports de layout
+@import './layout/colors';
+@import './layout/header';
+@import './layout/shadow';
+@import './layout/footer';
+
+
+// import de components
+@import './components/buttons';
+
+
+// Import de views
+
+@import './views/home';
+@import './views/servicios';
+@import './views/precios';
+@import './views/about';
+@import './views/contact';
+
+

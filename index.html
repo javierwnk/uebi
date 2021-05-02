@@ -3,58 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>Uebi - Bienvenido</title>
+
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/icon?family=Poppins" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 
-    <title>Uebi - Bienvenido</title>
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- Inicio Navbar -->
 
-    <header>
-        <div id="logo">
-            <a href="index.html">
-                <img src="images/logo.png">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/logo.png" alt="Uebi">
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bi bi-list"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="servicios.html#site">Uebi Site</a></li>
+                            <li><a class="dropdown-item" href="servicios.html#ecommerce">Uebi eCommerce</a></li>
+                            <li><a class="dropdown-item" href="servicios.html#manager">Uebi Manager</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="precios.html">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-primary" target="_new" href="https://wa.me/5491173601015">Chateá con nosotros</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <nav>
-            <ul class="lista-none">
-                <li class="menuLinks">
-                    <a href="servicios.html" class="links">Servicios <i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                        <li><a href="servicios.html#site" class="links">Uebi Site</a></li>
-                        <li><a href="servicios.html#ecommerce" class="links">Uebi eCommerce</a></li>
-                        <li><a href="servicios.html#manager" class="links">Uebi Manager</a></li>
-                    </ul>
-                </li>
-                <li class="menuLinks">
-                    <a href="precios.html" class="links">Precios</a>
-                </li>
-                <li class="menuLinks">
-                    <a href="about-us.html" class="links">Sobre nosotros</a>
-                </li>
-                <li class="menuLinks">
-                    <a href="contact.html" class="links">Contáctanos</a>
-                </li>
-                <li>
-                    <a href="#" class="primaryButton">Chateá con nosotros</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Inicio Main -->
+
 
     <main>
+        
+        <!-- Inicio Hero -->
 
-        <!-- Hero Section -->
-        <section id="hero">
-            <!-- Listado de redes sociales -->
+        <div class="hero">
+
             <div class="social">
-                <ul class="lista-none">
+                <ul>
                     <li>
                         <a href=""><i class="bi bi-instagram"></i></a>
                     </li>
@@ -70,46 +84,46 @@
                 </ul>
             </div>
 
-            <!-- Info principal del hero -->
 
-            <div id="info">
-                <p class="h2" style="font-weight: 400;">Ecommerce</p>
-                <p class="h2" style="font-weight: 600;">a tu alcance.</p>
-                <p class="info-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit tincidunt nunc, viverra vitae,
+            <div class="hero-content">
+                <p class="subtitle">Ecommerce</p>
+                <p class="title">a tu alcance.</p>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit tincidunt nunc, viverra vitae,
                     amet quisque
                     nisi, tristique.</p>
 
-                <ul class="disc">
+                <ul class="list">
                     <li><i class="bi bi-record-circle-fill"></i> Consultoría gratuita</li>
                     <li><i class="bi bi-record-circle-fill"></i> El mejor precio</li>
                     <li><i class="bi bi-record-circle-fill"></i> Rapidez</li>
+
                 </ul>
 
-                <ul class="lista-none botonera-hz">
-                    <li><a href="#" class="primaryButton">Chateá con nosotros</a> </li>
-                    <li><a href="#" class="secondaryButton">Conocé más</a></li>
+                <ul class="botonera">
+                    <li><a href="https://wa.me/5491173601015" target="_new" class="btn-primary">Chateá con nosotros</a> </li>
+                    <li><a href="servicios.html" class="btn-secondary">Conocé más</a></li>
                 </ul>
+            </div>
+
+            <div class="hero-img">
 
             </div>
 
-            <div id="mainimg">
-                <!-- La imagen se carga por CSS -->
-            </div>
-        </section>
+        </div>
 
-        <!-- Mini cards -->
+        <!-- Inicio Cards -->
 
-        <section class="container" id="cards-section">
+        <div class="container-fluid cards">
             <div class="sm-card">
-                <div class="sm-card-icon">
+                <div class="icon">
                     <i class="bi bi-cart-check"></i>
                 </div>
                 <p class="card-title">Económico</p>
                 <p class="card-paragaph">Lorem ipsum dolor sit amet consectetur.</p>
             </div>
 
-            <div class="sm-card order1">
-                <div class="sm-card-icon">
+            <div class="sm-card">
+                <div class="icon">
                     <i class="bi bi-lightning"></i>
                 </div>
                 <p class="card-title">Rápido</p>
@@ -117,7 +131,7 @@
             </div>
 
             <div class="sm-card">
-                <div class="sm-card-icon">
+                <div class="icon">
                     <i class="bi bi-toggles"></i>
                 </div>
                 <p class="card-title">Fácil</p>
@@ -126,25 +140,25 @@
             </div>
 
             <div class="sm-card">
-                <div class="sm-card-icon">
+                <div class="icon">
                     <i class="bi bi-cash"></i>
                 </div>
                 <p class="card-title">Seguro</p>
                 <p class="card-paragaph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis
                     assumenda dolor.</p>
             </div>
-        </section>
+        </div>
 
-        <!-- Info expandida -->
+        <!-- Inicio Beneficios -->
 
-        <section class="container" id="beneficios">
-            <div class="beneficios-container">
-                <p class="h3"><span class="thin">¿Por qué usar</span></p>
-                <p class="h3">Uebi en mi negocio?</p>
-            </div>
-            <div class="beneficios-container">
+
+        <div class="container-fluid beneficios">
+            <p class="title"><span>¿Por qué usar</span></p>
+            <p class="title">Uebi en mi negocio?</p>
+
+            <div class="beneficios-cards">
                 <div class="md-card">
-                    <div class="md-card-icon">
+                    <div class="icon">
                         <i class="bi bi-lightning-charge"></i>
                     </div>
                     <p class="card-title"><span class="semi-bold">Rápido</span></p>
@@ -155,7 +169,7 @@
                 </div>
 
                 <div class="md-card">
-                    <div class="md-card-icon">
+                    <div class="icon">
                         <i class="bi bi-emoji-sunglasses"></i>
                     </div>
                     <p class="card-title"><span class="semi-bold">Calidad<br></span></p>
@@ -166,7 +180,7 @@
                 </div>
 
                 <div class="md-card">
-                    <div class="md-card-icon">
+                    <div class="icon">
                         <i class="bi bi-play"></i>
                     </div>
                     <p class="card-title"><span class="semi-bold">Fácil de iniciar</span></p>
@@ -175,53 +189,62 @@
                         obcaecati commodi minima. Assumenda harum explicabo ad eius illo ipsum quae suscipit officia
                         expedita. Maxime consectetur dolore repellendus.</p>
                 </div>
+
             </div>
-        </section>
+        </div>
 
-        <!-- Frase -->
+        <!-- Inicio Frase -->
 
-        <section id="frase">
-            <p> Presencia online <span>al alcance del mundo</span></p>
-        </section>
+        <div class="container-fluid frase">
+            <p>Presencial online <span>al alcance del mundo</span></p>
+        </div>
     </main>
 
-    <!-- Footer -->
+    
+    <!-- Inicio Footer -->
+
 
     <footer>
         <div class="container">
-            <div id="logo">
-                <img src="images/logo.png">
+            <div class="brand">
+                <img src="images/logo.png" alt="Uebi">
             </div>
-            <div class="footer-info">
 
-                <div class="footer-divisiones">
+            <div class="info">
+                <div class="divisiones">
                     <ul>
-                        <li><a href="servicios.html" class="links"><span class="footer-titulo">Servicios</span></a></li>
+                        <li><a href="servicios.html" class="links"><span class="titulo">Servicios</span></a></li>
                         <li><a href="servicios.html" class="links">Uebi Site</a></li>
                         <li><a href="servicios.html" class="links">Uebi eCommerce</a></li>
                         <li><a href="servicios.html" class="links">Uebi Manager</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-divisiones">
+                <div class="divisiones">
                     <ul>
-                        <li><a href="#" class="links"><span class="footer-titulo">Ipsum pellentes.</span></a></li>
+                        <li><a href="#" class="links"><span class="titulo">Ipsum pellentes.</span></a></li>
                         <li><a href="#" class="links">NLorem</a></li>
                         <li><a href="#" class="links">UDolor Sit</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-divisiones">
+                <div class="divisiones">
                     <ul>
-                        <li><a href="#" class="links"><span class="footer-titulo">Adipiscing</span></a></li>
+                        <li><a href="#" class="links"><span class="titulo">Adipiscing</span></a></li>
                     </ul>
                 </div>
 
             </div>
 
-            <p class="h5">© Copyright 2021 Uebi. Todos los derechos reservados</p>
+            <p>© Copyright 2021 Uebi. Todos los derechos reservados</p>
+
+            </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

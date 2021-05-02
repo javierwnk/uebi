@@ -1,0 +1,169 @@
+
+
+// Hero Section
+
+.hero {
+    background: $primary;
+    display: flex;
+    justify-content: space-between;
+    height: 730px;
+    background: {
+        image: url("../images/vector.png");
+        repeat: no-repeat;
+        size: contain;
+    }
+
+    // Redes sociales
+    .social {
+        width: fit-content;
+        height: auto;
+        float: left;
+        margin: 0px 50px 0px 20px;
+        position: relative;
+        top: 25%;
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin: 15px 0 0 0;
+            transition: all 1s;
+
+            a {
+                color: $white;
+                font-size: 20px;
+            }
+        }
+
+        li:hover {
+            transform: scale(1.5,1.5)
+        }
+    }
+
+    // Contenido
+    .hero-content {
+        height: 400px;
+        max-width: 35vw;
+        color: $white;
+        margin-top: 120px;
+
+        .title {
+            font: {
+                size: 60px;
+                weight: 700;
+            }
+            line-height: 68px;
+        }
+
+        .subtitle {
+            font: {
+                size: 60px;
+                weight: 400;
+            }
+            line-height: 68px;
+        }
+
+        .paragraph {
+            color: $subtitle;
+        }
+        
+        .list {
+            padding: 0;
+            margin-top: 30px;
+
+            li {
+                display: inline;
+                margin-right: 15px;
+
+                .bi {
+                    color: #8FFFC5;
+                    font-size: 0.5em;
+                    position: relative;
+                    top: -2px;
+                }
+            }
+
+        }
+
+        .botonera {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 40px;
+            li {
+                display: inline;
+                margin-left: 10px;
+
+                a {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    
+    // Imagen
+    .hero-img {
+        background: {
+            image: url("../images/heroback.png");
+            repeat: no-repeat;
+            size: contain;
+        }
+        background-position-x: right;
+        height: 100%;
+        width: 55%;
+    }
+}
+
+// Cards
+
+.cards {
+    position: relative;
+    top: -130px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@import '../components/cards';
+
+// Beneficios 
+
+.beneficios {
+    padding-left: 10%;
+    
+    
+    .title {
+        font: {
+            size: 48px;
+            weight: 700;
+        }
+        line-height: 52px;
+
+        span {
+            font: {
+                weight: 100;
+            }
+        }
+    }
+}
+
+.beneficios-cards {
+    display: flex;
+}
+
+.frase {
+    margin: 80px 0;
+    
+    p {
+        font: {
+            size: 350%;
+            weight: 700;
+        }
+        text-align: center;
+        color: $title;
+
+        span {
+            color: $cta;
+        }
+    }
+}

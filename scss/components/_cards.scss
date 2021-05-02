@@ -1,0 +1,109 @@
+// Small Cards
+
+.sm-card {
+    width: 20%;
+    height: fit-content;
+    background-color: $grey;
+    border-radius: 12px;
+    margin: 0 10px 0 0;
+    float: right;
+    min-height: 230px;
+    box-shadow: $shadow-light;
+
+    .icon {
+        padding: 30px 0 12px 24px;
+
+        i {
+            background-color: $secondary;
+            display: block;
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+            width: 38px;
+            height: 38px;
+            box-sizing: border-box;
+            border-radius: 100%;
+            line-height: 40px;
+        }
+    }
+
+    .card-paragaph {
+        padding: 0 24px;
+    }
+
+}
+
+// Medium Cards
+
+.md-card {
+    width: 30%;
+    height: fit-content;
+    border-radius: 12px;
+    margin: 20px 2% 0 0;
+    min-height: 233px;
+
+    .icon {
+        background-color: $secondary;
+        display: block;
+        font-size: 38px;
+        text-align: center;
+        color: $white;
+        width: 82px;
+        height: 82px;
+        box-sizing: border-box;
+        border-radius: 100%;
+        line-height: 85px;
+    }
+
+    .card-title {
+        font-weight: 700;
+        padding: 0;
+        margin-top: 10px;
+    }
+}
+
+// Large Cards
+
+.lg-card {
+    border-radius: 12px;
+    padding: 17px;
+    box-sizing: border-box;
+    text-align: center;
+    background: $grey;
+
+    ul {
+        font-size: 12px;
+        list-style-type: none;
+        padding: 0;
+    }
+}
+
+.lg-card:hover {
+    box-shadow: $shadow;
+}
+
+// Card with image
+
+.right-radius {
+    border-radius: 12px 0 0 12px;
+}
+
+// Card General Configuration
+
+.card-title {
+    padding: 0 24px 0 24px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.card-price {
+    font-size: 48px;
+}
+
+.card-paragaph {
+    color: rgba(22, 22, 47, 0.7);
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+

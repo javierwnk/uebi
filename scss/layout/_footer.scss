@@ -1,0 +1,63 @@
+
+footer {
+    background: {
+        color: $primary;
+        image: url("../images/vector3.png");
+        repeat: no-repeat;
+        size: auto;
+        position: bottom left;
+        size: 60px;
+    }
+    background-position-x: 80px;
+    height: 350px;
+
+    .brand {
+        position: relative;
+        top: 50px;
+
+        img {
+            max-height: 30px;
+        }
+    }
+
+    .info {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .divisiones {
+        margin: 20px 5%;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                a {
+                    font: {
+                        size: 14px;
+                        style: normal;
+                        weight: 500;
+                        align: center;
+                    }
+                    line-height: 42px;
+                    letter-spacing: 0px;
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+
+        .titulo {
+            color: $subtitle;
+        }
+    }
+
+    p {
+        color: $white;
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,48 @@
+
+.btn-primary {
+    background: $secondary;
+    border-radius: 12px;
+    text: {
+        align: center;
+        decoration: none;
+    }
+    font: {
+        size: 14px;
+        weight: 500;
+        style: normal;
+    }
+    line-height: 20px;
+    letter-spacing: 0px;
+    padding: 10px 0px;
+    width: 208px;
+}
+
+.btn-secondary {
+    background: $primary;
+    border-radius: 12px;
+    text: {
+        align: center;
+        decoration: none;
+    }
+    font: {
+        size: 14px;
+        weight: 500;
+        style: normal;
+    }
+    border: 1.5px solid $white;
+    color: $body;
+    line-height: 20px;
+    letter-spacing: 0px;
+    padding: 10px 0px;
+    width: 208px;
+}
+
+.btn-primary:hover {
+    box-shadow: $shadow;
+    background: $secondary;
+}
+
+.btn-secondary:hover {
+    box-shadow: $shadow;
+    background: $primary;
+}

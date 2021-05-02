@@ -1,0 +1,19 @@
+@import '../layout/colors';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    background: $grey;
+}
+
+
+::selection {
+    background: $primary;
+    color: $white;
+}
+

@@ -1,0 +1,16 @@
+.about {
+    p {
+        color: $grey;
+        text: {
+            align: center;
+        }
+    }
+    h1 {
+        @extend p;
+        font: {
+            weight: 700;
+        }
+        
+    }
+
+}

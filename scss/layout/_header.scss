@@ -1,0 +1,53 @@
+.navbar {
+    background: $linear !important;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 15px 0 0 0;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: $white !important;
+}
+
+.nav-item {
+    margin: 0 20px !important;
+}
+
+// Modificaciones al menú desplegable
+
+.dropdown-menu {
+    background: $primary;
+    color: $white;
+}
+
+.dropdown-item {
+    color: $white;
+}
+
+.dropdown-item:hover {
+    background: $grey !important;
+}
+
+// Logotipo
+
+.navbar-brand {
+
+    img {
+        max-height: 30px;
+        margin-left: 30px;
+    }
+
+}
+
+// Color icono de la hamburguesa del menú
+
+.navbar-toggler {
+    span {
+        color: $white;
+    }
+}
