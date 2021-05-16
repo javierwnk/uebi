@@ -1,4 +1,5 @@
 
+@import '../components/cards';
 
 // Hero Section
 
@@ -50,7 +51,7 @@
 
         .title {
             font: {
-                size: 60px;
+                size: 3.75em;
                 weight: 700;
             }
             line-height: 68px;
@@ -58,7 +59,7 @@
 
         .subtitle {
             font: {
-                size: 60px;
+                size: 3.75em;
                 weight: 400;
             }
             line-height: 68px;
@@ -124,8 +125,6 @@
     justify-content: flex-end;
 }
 
-@import '../components/cards';
-
 // Beneficios 
 
 .beneficios {
@@ -156,7 +155,7 @@
     
     p {
         font: {
-            size: 350%;
+            size: 3.5em;
             weight: 700;
         }
         text-align: center;
@@ -166,4 +165,140 @@
             color: $cta;
         }
     }
+}
+
+@media all and (max-width: 990px) {
+
+    
+.hero {
+    justify-content: flex-start; // Se modificó de space-between
+    height: 690px; // Se achicó el alto
+
+    // Contenido
+    .hero-content {
+        max-width: 70vw; // Ahora el contenido ocupa más parte.
+ 
+}
+
+   // Imagen
+   .hero-img {
+    display: none !important; // No se muestra la imagen de la derecha
+    }
+
+}
+
+}
+
+@media all and (max-width: 630px) {
+
+    .hero {
+        height: 680px; // se ajusta la altura
+
+        .botonera { // se hacen los botones mas largos y se agrega un margen entre sí al estar en dos lineas distintas
+            li {
+                display: block;
+                margin-left: 10px;
+
+                a {
+                    display: block;
+                    margin-top: 10px;
+                    width: 95%;
+                }
+            }
+        }
+
+    }   
+
+    .cards { // se ocultan las cards
+        display: none;
+    }
+
+    .beneficios {
+        padding: 10% 0 0 10%; // se agrega un padding superior a la parte de beneficios
+        
+    }
+    
+
+}
+
+@media all and (max-width: 490px) {
+
+    .hero {
+
+        height: 550px;
+
+        .hero-content {
+            .title {
+                font: {
+                    size: 2.5em !important;
+                }
+            }
+
+            .subtitle {
+                font: {
+                    size: 2.5em !important;
+                }
+                line-height: 0px !important;
+            }
+
+        }
+    }
+
+
+    // Beneficios 
+
+    .beneficios {
+      
+        .title {
+            font: {
+                size: 2em !important;
+                weight: 700;
+            }
+            line-height: 20px !important;
+
+            span {
+                font: {
+                    weight: 100;
+                }
+            }
+        }
+    }
+
+    .frase {
+        
+        p {
+            font: {
+                size: 2em !important;
+            }
+        }
+    }
+
+    .beneficios-cards {
+        flex-flow: row wrap;
+    }
+    
+
+}
+
+@media all and (max-width: 390px) {
+
+    .social {
+        display: none !important;
+    }
+
+    .hero-content {
+        padding-left: 20px;
+        max-width: 90vw !important;
+    }
+
+    .beneficios {
+      
+        .title {
+            font: {
+                size: 1.5em !important;
+            }
+            line-height: 10px !important;
+        }
+    }
+
 }

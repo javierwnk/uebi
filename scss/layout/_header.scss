@@ -51,3 +51,19 @@
         color: $white;
     }
 }
+
+@media all and (max-width: 992px) {
+
+.navbar {
+    background: $primary !important;
+}
+
+.nav-item, .dropdown-item {
+    text-align: center;
+    
+}
+
+.nav-link.btn-primary {
+    visibility: hidden;
+}
+}

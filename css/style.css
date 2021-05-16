@@ -44,6 +44,14 @@ body {
 .navbar-toggler span {
   color: #FFFFFF; }
 
+@media all and (max-width: 992px) {
+  .navbar {
+    background: #16162F !important; }
+  .nav-item, .dropdown-item {
+    text-align: center; }
+  .nav-link.btn-primary {
+    visibility: hidden; } }
+
 footer {
   background-color: #16162F;
   background-image: url("../images/vector3.png");
@@ -61,7 +69,7 @@ footer {
   footer .info {
     position: relative;
     display: flex;
-    justify-content: flex-end; }
+    justify-content: center; }
   footer .divisiones {
     margin: 20px 5%; }
     footer .divisiones ul {
@@ -83,6 +91,20 @@ footer {
     margin-top: 30px;
     font-weight: 400;
     font-size: 12px; }
+
+@media all and (max-width: 768px) {
+  p, .about h1 {
+    margin-top: 0px !important; } }
+
+@media all and (max-width: 425px) {
+  footer {
+    height: 520px; }
+    footer .brand {
+      display: none !important; }
+    footer .info {
+      flex-flow: column; }
+    footer .divisiones {
+      margin: 10px 0; } }
 
 .btn-primary {
   background: #5259FF;
@@ -119,81 +141,6 @@ footer {
 .btn-secondary:hover {
   box-shadow: 0px 10px 40px rgba(91, 98, 255, 0.3);
   background: #16162F; }
-
-.hero {
-  background: #16162F;
-  display: flex;
-  justify-content: space-between;
-  height: 730px;
-  background-image: url("../images/vector.png");
-  background-repeat: no-repeat;
-  background-size: contain; }
-  .hero .social {
-    width: fit-content;
-    height: auto;
-    float: left;
-    margin: 0px 50px 0px 20px;
-    position: relative;
-    top: 25%; }
-    .hero .social ul {
-      list-style-type: none; }
-    .hero .social li {
-      margin: 15px 0 0 0;
-      transition: all 1s; }
-      .hero .social li a {
-        color: #FFFFFF;
-        font-size: 20px; }
-    .hero .social li:hover {
-      transform: scale(1.5, 1.5); }
-  .hero .hero-content {
-    height: 400px;
-    max-width: 35vw;
-    color: #FFFFFF;
-    margin-top: 120px; }
-    .hero .hero-content .title {
-      font-size: 60px;
-      font-weight: 700;
-      line-height: 68px; }
-    .hero .hero-content .subtitle {
-      font-size: 60px;
-      font-weight: 400;
-      line-height: 68px; }
-    .hero .hero-content .paragraph {
-      color: #8F91BE; }
-    .hero .hero-content .list {
-      padding: 0;
-      margin-top: 30px; }
-      .hero .hero-content .list li {
-        display: inline;
-        margin-right: 15px; }
-        .hero .hero-content .list li .bi {
-          color: #8FFFC5;
-          font-size: 0.5em;
-          position: relative;
-          top: -2px; }
-    .hero .hero-content .botonera {
-      list-style-type: none;
-      padding: 0;
-      margin-top: 40px; }
-      .hero .hero-content .botonera li {
-        display: inline;
-        margin-left: 10px; }
-        .hero .hero-content .botonera li a {
-          display: inline-block; }
-  .hero .hero-img {
-    background-image: url("../images/heroback.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: right;
-    height: 100%;
-    width: 55%; }
-
-.cards {
-  position: relative;
-  top: -130px;
-  z-index: 1;
-  display: flex;
-  justify-content: flex-end; }
 
 .sm-card {
   width: 20%;
@@ -273,6 +220,90 @@ footer {
   line-height: 18px;
   font-weight: 400; }
 
+@media all and (max-width: 490px) {
+  .md-card {
+    width: 100vw !important; }
+    .md-card .icon {
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px; } }
+
+.hero {
+  background: #16162F;
+  display: flex;
+  justify-content: space-between;
+  height: 730px;
+  background-image: url("../images/vector.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .hero .social {
+    width: fit-content;
+    height: auto;
+    float: left;
+    margin: 0px 50px 0px 20px;
+    position: relative;
+    top: 25%; }
+    .hero .social ul {
+      list-style-type: none; }
+    .hero .social li {
+      margin: 15px 0 0 0;
+      transition: all 1s; }
+      .hero .social li a {
+        color: #FFFFFF;
+        font-size: 20px; }
+    .hero .social li:hover {
+      transform: scale(1.5, 1.5); }
+  .hero .hero-content {
+    height: 400px;
+    max-width: 35vw;
+    color: #FFFFFF;
+    margin-top: 120px; }
+    .hero .hero-content .title {
+      font-size: 3.75em;
+      font-weight: 700;
+      line-height: 68px; }
+    .hero .hero-content .subtitle {
+      font-size: 3.75em;
+      font-weight: 400;
+      line-height: 68px; }
+    .hero .hero-content .paragraph {
+      color: #8F91BE; }
+    .hero .hero-content .list {
+      padding: 0;
+      margin-top: 30px; }
+      .hero .hero-content .list li {
+        display: inline;
+        margin-right: 15px; }
+        .hero .hero-content .list li .bi {
+          color: #8FFFC5;
+          font-size: 0.5em;
+          position: relative;
+          top: -2px; }
+    .hero .hero-content .botonera {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 40px; }
+      .hero .hero-content .botonera li {
+        display: inline;
+        margin-left: 10px; }
+        .hero .hero-content .botonera li a {
+          display: inline-block; }
+  .hero .hero-img {
+    background-image: url("../images/heroback.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    height: 100%;
+    width: 55%; }
+
+.cards {
+  position: relative;
+  top: -130px;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end; }
+
 .beneficios {
   padding-left: 10%; }
   .beneficios .title {
@@ -288,12 +319,65 @@ footer {
 .frase {
   margin: 80px 0; }
   .frase p, .frase .about h1, .about .frase h1 {
-    font-size: 350%;
+    font-size: 3.5em;
     font-weight: 700;
     text-align: center;
     color: #1C2042; }
     .frase p span, .frase .about h1 span, .about .frase h1 span {
       color: #5259FF; }
+
+@media all and (max-width: 990px) {
+  .hero {
+    justify-content: flex-start;
+    height: 690px; }
+    .hero .hero-content {
+      max-width: 70vw; }
+    .hero .hero-img {
+      display: none !important; } }
+
+@media all and (max-width: 630px) {
+  .hero {
+    height: 680px; }
+    .hero .botonera li {
+      display: block;
+      margin-left: 10px; }
+      .hero .botonera li a {
+        display: block;
+        margin-top: 10px;
+        width: 95%; }
+  .cards {
+    display: none; }
+  .beneficios {
+    padding: 10% 0 0 10%; } }
+
+@media all and (max-width: 490px) {
+  .hero {
+    height: 550px; }
+    .hero .hero-content .title {
+      font-size: 2.5em !important; }
+    .hero .hero-content .subtitle {
+      font-size: 2.5em !important;
+      line-height: 0px !important; }
+  .beneficios .title {
+    font-size: 2em !important;
+    font-weight: 700;
+    line-height: 20px !important; }
+    .beneficios .title span {
+      font-weight: 100; }
+  .frase p, .frase .about h1, .about .frase h1 {
+    font-size: 2em !important; }
+  .beneficios-cards {
+    flex-flow: row wrap; } }
+
+@media all and (max-width: 390px) {
+  .social {
+    display: none !important; }
+  .hero-content {
+    padding-left: 20px;
+    max-width: 90vw !important; }
+  .beneficios .title {
+    font-size: 1.5em !important;
+    line-height: 10px !important; } }
 
 .content {
   background: #16162F;
