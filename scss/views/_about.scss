@@ -5,6 +5,7 @@
             align: center;
         }
     }
+
     h1 {
         @extend p;
         font: {
@@ -13,4 +14,8 @@
         
     }
 
+    .carrusel {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
