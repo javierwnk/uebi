@@ -65,7 +65,7 @@
 // Large Cards
 
 .lg-card {
-    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
     padding: 17px;
     box-sizing: border-box;
     text-align: center;
@@ -84,8 +84,8 @@
 
 // Card with image
 
-.right-radius {
-    border-radius: 12px 0 0 12px;
+.bottom-radius {
+    border-radius: 0px 0px 12px 12px;
 }
 
 // Card General Configuration

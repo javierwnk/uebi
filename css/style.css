@@ -190,7 +190,7 @@ footer {
     margin-top: 10px; }
 
 .lg-card {
-  border-radius: 12px;
+  border-radius: 0 0 12px 12px;
   padding: 17px;
   box-sizing: border-box;
   text-align: center;
@@ -203,8 +203,8 @@ footer {
 .lg-card:hover {
   box-shadow: 0px 10px 40px rgba(91, 98, 255, 0.3); }
 
-.right-radius {
-  border-radius: 12px 0 0 12px; }
+.bottom-radius {
+  border-radius: 0px 0px 12px 12px; }
 
 .card-title {
   padding: 0 24px 0 24px;
@@ -392,13 +392,14 @@ footer {
 
 .servicios {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   width: 80%;
+  max-width: 900px;
   padding-bottom: 50px; }
   .servicios img {
-    max-width: 400px;
-    border-radius: 0 10px 10px 0; }
+    max-width: 100%;
+    border-radius: 12px 12px 0 0; }
 
 .grid {
   display: grid;
