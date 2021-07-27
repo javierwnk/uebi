@@ -19,6 +19,23 @@
 
 <body>
 
+<?php 
+$nya = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['cellphone'];
+$mensaje = $_POST ['textearea'];
+
+$mimail="contact@uebi.store";
+
+$cuerpoemail = "Ha recibido una consulta de ".$nya."\r\n"."Email: ".$email."\r\n"."Telefono de contacto: ".$phone."\r\n"."Mensaje: ".$mensaje;
+$cuerpoenvio = "Se ha enviado su consulta a Uebi "."\r\n"."Teléfono: ".$phone."\r\n"."Mensaje: ".$mensaje."\r\n"."Le responderemos a la brevedad"."\r\n"."Por favor, no responda este mensaje";
+$respuesta ="From: $nya <$email>";
+$respuestaenvio ="From: Uebi <contact@uebi.store>";
+
+mail ($mimail, "Ha recido una nueva consulta", $cuerpoemail, $respuesta);
+mail ($email, "Recibimos tu consulta - Uebi", $cuerpoenvio, $respuestaenvio);
+?>
+
     <!-- Inicio Navbar -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -65,30 +82,12 @@
 
 
     <main>
-        <div class="contact container-fluid content">
-            <h1 class="contact__titulo">Contacto</h1>
+        <div class="success container-fluid content">
 
-            <section class="container contact__form">
-
-                <form action="success.php" method="POST">
-                    <label class="contact__form__label" for="name">Nombre<span class="required">*</span></label>
-                    <input class="contact__form__input" type="text" name="name" id="name" required placeholder="Ingrese su nombre">
-
-                    <label class="contact__form__label" for="email">Correo electrónico<span class="required">*</span></label>
-                    <input class="contact__form__input" type="email" name="email" id="email" required placeholder="Ingrese su correo electrónico">
-
-                    <label class="contact__form__label" for="cellphone">Celular<span class="required">*</span></label>
-                    <input class="contact__form__input" type="tel" name="cellphone" id="cellphone" required placeholder="Ingrese un teléfono de contacto">
-
-                    <label class="contact__form__label" for="textarea">Mensaje<span class="required">*</span></label>
-                    <textarea class="contact__form__input" name="textearea" id="textearea" cols="30"
-                        rows="10" required placeholder="Ingrese su mensaje..."></textarea>
-
-                    <input class="contact__form__input--buttonPrimary" type="submit" value="Enviar">
-
-                </form>
-
-            </section>
+            <img src="./images/flame-1237.png" alt="imagen mensaje envíado">
+            <h1>Mensaje envíado correctamente</h1>
+            <p>¡A la brevedad nos comunicaremos con vos!</p>
+          
         </div>
     </main>
 

@@ -405,7 +405,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
-  grid-template-areas: "titulo titulo titulo" "plan1 plan2 plan3" "plan4 plan4 plan4";
+  grid-template-areas: "titulo titulo titulo" "plan1 plan2 plan3" "plan4 plan4 plan4";
   grid-column-gap: 20px;
   grid-row-gap: 40px; }
 
@@ -449,7 +449,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: "titulo" "plan1" "plan2" "plan3" "plan4";
+    grid-template-areas: "titulo" "plan1" "plan2" "plan3" "plan4";
     grid-column-gap: 20px;
     grid-row-gap: 40px; }
   #titulo {
@@ -492,6 +492,10 @@ footer {
 .contact {
   color: #F6F6FB;
   padding-bottom: 20px; }
+  .contact .required {
+    color: red;
+    font-size: 12px;
+    vertical-align: super; }
   .contact .contact__titulo {
     text-align: center;
     font-size: 38px;
@@ -533,3 +537,29 @@ footer {
     text-align: center;
     outline: none;
     border: 0; }
+
+.success {
+  height: 100vh; }
+  .success img {
+    width: 30%;
+    margin: 0 auto;
+    display: block; }
+  .success h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center; }
+  .success p, .success .about h1, .about .success h1 {
+    text-align: center;
+    color: #fff; }
+
+@media all and (max-width: 1024px) {
+  .success img {
+    width: 50%; } }
+
+@media all and (max-width: 768px) {
+  .success img {
+    width: 50%; } }
+
+@media all and (max-width: 425px) {
+  .success img {
+    width: 90%; } }

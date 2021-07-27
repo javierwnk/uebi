@@ -4,6 +4,12 @@ $fullWidth: 100%;
     color: $grey;
     padding-bottom: 20px;
 
+    .required {
+        color: red;
+        font-size: 12px;
+        vertical-align: super;
+    }
+
     .contact__titulo {
         text: {
             align: center;
